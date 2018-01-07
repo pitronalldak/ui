@@ -1,0 +1,10 @@
+.next
+build
+dist
+node_modules
+yarn-error.log
+npm-debug.log
+styleguide/build
+styleguide/index.html
+i18n/messages
+.vscode

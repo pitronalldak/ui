@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { slide as Menu } from 'react-burger-menu'
-// import Typist from 'react-typist';
+import Typist from 'react-typist';
 
 const GlobalWrapper = styled.div`
   height: 100vh;
@@ -36,6 +36,18 @@ const Img = styled.img`
   bottom: 0;
 `
 
+const MenuItem = styled.a`
+  color: #b4bad2;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  &:hover {
+    background: #b4bad2;
+    color: #373a47;
+  }
+`
+
+
 class IndexPage extends React.Component {
   state = { isOpen: false }
 
@@ -43,7 +55,7 @@ class IndexPage extends React.Component {
     this.setState(state)
   }
 
-  
+
   render() {
     const { isOpen } = this.state
     return(
@@ -56,16 +68,16 @@ class IndexPage extends React.Component {
             onStateChange={this.handleMenuOpen}        
             right
           >
-            <a id="home" className="menu-item" href="/">About</a>
-            <a id="about" className="menu-item" href="/about">Techologies</a>
-            <a id="contact" className="menu-item" href="/contact">Porstfolio</a> 
-            <a id="contact" className="menu-item" href="/contact">Contributions</a> 
-            <a id="contact" className="menu-item" href="/contact">Contact us</a> 
-
+            <MenuItem id="home" className="menu-item" href="/">About</MenuItem>
+            <MenuItem id="about" className="menu-item" href="/about">Techologies</MenuItem>
+            <MenuItem id="contact" className="menu-item" href="/contact">Portfolio</MenuItem> 
+            <MenuItem id="contact" className="menu-item" href="/contact">Contributions</MenuItem> 
+            <MenuItem id="contact" className="menu-item" href="/contact">Contact us</MenuItem> 
           </Menu>
-    
           <PageWrap isOpen={isOpen} id="page-wrap"> 
+            <Typist>
               <Title>Hire an expert Front-End Team</Title>
+            </Typist>
             <Img src="../static/img/bart-main.png" />
           </PageWrap>
         </OuterContainer>

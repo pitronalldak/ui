@@ -1,0 +1,45 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/pitronalldak/.avn/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/pitronalldak/Downloads/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/pitronalldak/.avn/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/pitronalldak/Downloads/google-cloud-sdk/bin:/Users/pitronalldak/Library/Android/sdk/tools:/Users/pitronalldak/Library/Android/sdk/platform-tools:/Users/pitronalldak/golang/bin:/Users/pitronalldak/Library/Android/sdk/tools:/Users/pitronalldak/Library/Android/sdk/platform-tools:/Users/pitronalldak/golang/bin
+
+Yarn version: 
+  1.1.0
+
+Node version: 
+  8.9.3
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "vr-lab-ui",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "node server.js",
+      "build": "next build",
+      "start": "NODE_ENV=production node server.js"
+    },
+    "dependencies": {
+      "express": "^4.14.0",
+      "next": "latest",
+      "react": "^16.0.0",
+      "react-dom": "^16.0.0",
+      "styled-components": "^2.4.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/express: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:122581:19)
+      at ontimeout (timers.js:475:11)
+      at tryOnTimeout (timers.js:310:5)
+      at Timer.listOnTimeout (timers.js:270:5)

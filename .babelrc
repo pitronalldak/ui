@@ -1,0 +1,33 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    "transform-es2015-modules-commonjs",
+    "transform-object-rest-spread",
+    ["styled-components", {
+      "ssr": true
+    }],
+    ["wrap-in-js", {
+      "extensions": ["css$"]
+    }]
+    // ["module-resolver", {
+    //   "alias": {
+    //     "__tests__": "./dist/__tests__",
+    //     "server": "./dist/server",
+    //     "pages": "./dist/pages",
+    //     "components": "./dist/client/components",
+    //     "containers": "./dist/client/containers",
+    //     "actions": "./dist/client/actions",
+    //     "styled": "./dist/client/styled",
+    //     "reducers": "./dist/client/reducers",
+    //     "utils": "./dist/client/utils",
+    //     "store": "./dist/client/store",
+    //     "hocs": "./dist/client/hocs",
+    //     "api": "./dist/client/api",
+    //     "middlewares": "./dist/client/middlewares",
+    //     "config": "./dist/config"
+    //   }
+    // }]
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "vr-lab-ui",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.4.0",
+    "babel-plugin-wrap-in-js": "^1.1.1",
+    "express": "^4.14.0",
+    "next": "latest",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.0.10",
+    "postcss-unprefix": "^2.1.1",
+    "raw-loader": "^0.5.1",
+    "react": "^16.0.0",
+    "react-burger-menu": "^2.2.3",
+    "react-dom": "^16.0.0",
+    "styled-components": "^2.4.0"
+  }
+}
